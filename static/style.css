@@ -1,0 +1,125 @@
+html {
+  background-color: #f3ece4;
+}
+
+.top-header {
+  position: fixed;
+  display: flex;
+  height: 130px;
+  position: relative;
+  background-color: #ffffff;
+  font-family: 'Leckerli One', cursive;
+}
+
+.top-header::before,
+.top-header::after {
+  border-bottom: 1px solid #f3ece4;
+}
+
+.top-header::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 10px;
+  background-size: 20px 40px;
+  background-image: radial-gradient(
+    circle at 10px -15px,
+    transparent 20px,
+    #f3ece4 21px
+  );
+}
+
+.top-header::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 15px;
+  background-size: 40px 40px;
+  background-image: radial-gradient(
+    circle at 10px 26px,
+    #f3ece4 20px,
+    transparent 21px
+  );
+}
+
+.header-contents {
+  display: flex;
+  flex-direction: row;
+}
+
+.main-title-div {
+  position: absolute;
+  top: 20%;
+  margin: 0;
+  margin-left: 23%;
+}
+
+.main-title {
+  color: #E47277;
+}
+
+.adesszert {
+  color: #5e3c3e;
+}
+
+.main-logo {
+  height: 110px;
+  width: 110px;
+  margin-left: 50%;
+  padding: 0;
+}
+
+.brownies {
+  background-color: #f3ece4;
+}
+
+.brownie-header {
+  color: #624143; 
+  padding-top: 5%; 
+  font-family: 'Leckerli One', cursive;
+}
+
+.brownie-glutenfree {
+  font-size: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+  .top-header {
+    display: flex;
+    height: 110px;
+    position: relative;
+    background-color: #ffffff;
+  }
+
+  .main-logo {
+    height: 90px;
+    width: 90px;
+    margin-left: 15%;
+  }
+
+  .main-title-div {
+    position: absolute;
+    top: 32%;
+    margin: 0;
+    margin-left: 32%;
+  }
+
+  .main-title {
+    font-size: 120%;
+  }
+
+  .brownie-header {
+    color: #624143; 
+    padding-top: 5%; 
+    font-family: 'Leckerli One', cursive;
+    font-size: 200%;
+  }
+  
+  .brownie-glutenfree {
+    font-size: 50%;
+  }
+}

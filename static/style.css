@@ -1,9 +1,9 @@
 html {
   background-color: #f3ece4;
+  margin: 0 auto;
 }
 
 .top-header {
-  position: fixed;
   display: flex;
   height: 130px;
   position: relative;
@@ -75,6 +75,7 @@ html {
 
 .brownies {
   background-color: #f3ece4;
+  margin: 0 auto;
 }
 
 .brownie-header {
@@ -85,6 +86,66 @@ html {
 
 .brownie-glutenfree {
   font-size: 50%;
+}
+
+.brownie-container {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 3%;
+}
+
+.brownie-div {
+  width: 280px;
+  height: 300px;
+  background-color: #fff;
+  box-shadow: 2px 5px 15px -8px rgba(0, 0, 0, 0.59);
+  border-radius: 5px;
+  position: relative;
+  margin: 30px;
+}
+
+.details-button {
+  font-family: 'Cairo', sans-serif;
+  font-weight: bold;
+  padding: 10px;
+  width: 40%;
+  text-align: center;
+  border: 1px solid silver;
+  background-color: #fff;
+  border-radius: 5px;
+  color: #e67e83;
+  position: relative;
+  transition: all 0.2s ease;
+  box-shadow: 2px 5px 15px -8px rgba(0, 0, 0, 0.59);
+  position: absolute;
+  bottom: -7%;
+  right: 29%;
+}
+
+.details-button:focus {
+  outline: 0;
+}
+
+.details-button:hover {
+  transition: all 0.2s ease;
+  color: white;
+  border: 1px solid #e67e83;
+  background-color: #e67e83;
+}
+
+.cake-image {
+  width: 280px;
+  height: 190px;
+}
+
+.cake-title {
+  padding-top: 15px;
+  color: #624143;
+  font-family: 'Cairo', sans-serif;
+  font-weight: bold;
 }
 
 @media only screen and (max-width: 600px) {

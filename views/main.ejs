@@ -10,6 +10,7 @@
     <link rel="shortcut icon" href="/whisk.png" type="image/x-icon">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <title>A desszert - Édes üzem</title>
@@ -29,7 +30,17 @@
         </header>
 
         <div class="brownies">
-            <h1 align="center" class="brownie-header">Brownie-k:<br><span class="brownie-glutenfree">(gluténmentes)</span></h1>
+            <h1 align="center" class="brownie-header">Brownie-k:<br><span
+                    class="brownie-glutenfree">(gluténmentes)</span></h1>
+            <div class="brownie-container">
+                <% for (let i = 0; i < brownies.length; i++) { %>
+                    <div class="brownie-div">
+                        <img class="cake-image" src="/suti.jpg" alt="cake">
+                        <p class="cake-title"><%=brownies[i].name%></p>
+                        <button class="details-button">Részletek</button>
+                    </div>
+                <% } %>
+            </div>
         </div>
     </div>
 </body>

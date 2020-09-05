@@ -129,8 +129,59 @@ const cheesecakes = [
     }
 ]
 
+const seasonalCheesecakes = [
+    {
+        id: 15,
+        name: "Gesztenyés sajttorta",
+        ingredients: "",
+        allergens: "",
+        price: "",
+        image: ""
+    },
+    {
+        id: 16,
+        name: "Sütőtökös sajttorta",
+        ingredients: "",
+        allergens: "",
+        price: "",
+        image: ""
+    },
+    {
+        id: 17,
+        name: "Ferrero Rocher sajttorta",
+        ingredients: "",
+        allergens: "",
+        price: "",
+        image: ""
+    },
+    {
+        id: 18,
+        name: "Bounty sajttorta",
+        ingredients: "",
+        allergens: "",
+        price: "",
+        image: ""
+    },
+    {
+        id: 19,
+        name: "Meggyes-marcipános sajttorta",
+        ingredients: "",
+        allergens: "",
+        price: "",
+        image: ""
+    }, 
+    {
+        id: 20,
+        name: "Toffifee sajttorta",
+        ingredients: "",
+        allergens: "",
+        price: "",
+        image: ""
+    }
+]
+
 app.get('/', (req, res) => {
-    res.render('main', {brownies: brownies, cheesecakes: cheesecakes});
+    res.render('main', {brownies: brownies, cheesecakes: cheesecakes, seasonalCheesecakes: seasonalCheesecakes});
 })
 
 app.listen(PORT, () => {

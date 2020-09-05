@@ -271,8 +271,83 @@ const specialities = [
     }
 ]
 
+const freeCakes = [
+    {
+        id: 32, 
+        name: "Mákos guba torta",
+        ingredients: "",
+        allergens: "",
+        price: "",
+        image: ""
+    },
+    {
+        id: 33,
+        name: "Túrótorta (kölesből)",
+        ingredients: "",
+        allergens: "",
+        price: "",
+        image: ""
+    },
+    {
+        id: 34,
+        name: "Raffaello (kókuszos vaníliás)",
+        ingredients: "",
+        allergens: "",
+        price: "",
+        image: ""
+    },
+    {
+        id: 35,
+        name: "Málnás-étcsokis \"sajttorta\"",
+        ingredients: "",
+        allergens: "",
+        price: "",
+        image: ""
+    },
+    {
+        id: 36,
+        name: "Csokis kókuszos \"sajttorta\"",
+        ingredients: "",
+        allergens: "",
+        price: "",
+        image: ""
+    },
+    {
+        id: 37,
+        name: "Citromkrémes \"sajttorta\"",
+        ingredients: "",
+        allergens: "",
+        price: "",
+        image: ""
+    },
+    {
+        id: 38,
+        name: "Málnás-mangós \"sajttorta\"",
+        ingredients: "",
+        allergens: "",
+        price: "",
+        image: ""
+    },
+    {
+        id: 39,
+        name: "Csupa csoki \"sajttorta\"",
+        ingredients: "",
+        allergens: "",
+        price: "",
+        image: ""
+    },
+    {
+        id: 40,
+        name: "Paleo brownie (magvakkal)",
+        ingredients: "",
+        allergens: "",
+        price: "",
+        image: ""
+    }
+]
+
 app.get('/', (req, res) => {
-    res.render('main', {brownies: brownies, cheesecakes: cheesecakes, seasonalCheesecakes: seasonalCheesecakes, specialities: specialities});
+    res.render('main', {brownies: brownies, cheesecakes: cheesecakes, seasonalCheesecakes: seasonalCheesecakes, specialities: specialities, freeCakes: freeCakes});
 })
 
 app.listen(PORT, () => {

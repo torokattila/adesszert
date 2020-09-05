@@ -73,7 +73,7 @@ html {
   padding: 0;
 }
 
-.brownies {
+.brownies, .cheesecakes {
   background-color: #f3ece4;
   margin: 0 auto;
 }
@@ -203,5 +203,16 @@ html {
   
   .brownie-glutenfree {
     font-size: 50%;
+  }
+
+  .modal-close-button {
+    background-color: #fff;
+    color: #e67e83;
+    font-weight: bold;
+    border: 1px solid #e67e83;
+    padding: 8px;
+    border-radius: 7px;
+    cursor: pointer;
+    width: 25%;
   }
 }

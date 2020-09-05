@@ -54,8 +54,83 @@ const brownies = [
     }
 ]
 
+const cheesecakes = [
+    {
+        id: 6,
+        name: "Sósmogyorós sajttorta",
+        ingredients: "",
+        allergens: "",
+        price: "",
+        image: ""
+    },
+    {
+        id: 7,
+        name: "Áfonyás \"New York\" cheesecake",
+        ingredients: "",
+        allergens: "",
+        price: "",
+        image: ""
+    },
+    {
+        id: 8,
+        name: "Epres sajttorta",
+        ingredients: "",
+        allergens: "",
+        price: "",
+        image: ""
+    },
+    {
+        id: 9,
+        name: "Oreos sajttorta",
+        ingredients: "",
+        allergens: "",
+        price: "",
+        image: ""
+    },
+    {
+        id: 10,
+        name: "Snickers sajttorta (mogyoróvajjal)",
+        ingredients: "",
+        allergens: "",
+        price: "",
+        image: ""
+    },
+    {
+        id: 11,
+        name: "Málnás-csokis sajttorta (gluténmentes)",
+        ingredients: "",
+        allergens: "",
+        price: "",
+        image: ""
+    },
+    {
+        id: 12,
+        name: "Meggyes-mákos sajttorta",
+        ingredients: "",
+        allergens: "",
+        price: "",
+        image: ""
+    },
+    {
+        id: 13,
+        name: "Citromkrémes sajttorta",
+        ingredients: "",
+        allergens: "",
+        price: "",
+        image: ""
+    },
+    {
+        id: 14,
+        name: "Fehércsokis joghurttorta (feketeribizlivel/passió gyümolccsel)",
+        ingredients: "",
+        allergens: "",
+        price: "",
+        image: ""
+    }
+]
+
 app.get('/', (req, res) => {
-    res.render('main', {brownies: brownies});
+    res.render('main', {brownies: brownies, cheesecakes: cheesecakes});
 })
 
 app.listen(PORT, () => {

@@ -180,8 +180,99 @@ const seasonalCheesecakes = [
     }
 ]
 
+const specialities = [
+    {
+        id: 21,
+        name: "Chilis-mangós fehércsokimousse",
+        ingredients: "",
+        allergens: "",
+        price: "",
+        image: ""
+    },
+    {
+        id: 22,
+        name: "Narancsos-passiós sajttorta",
+        ingredients: "",
+        allergens: "",
+        price: "",
+        image: ""
+    },
+    {
+        id: 23,
+        name: "Sült túrótorta (gluténmentes)",
+        ingredients: "",
+        allergens: "",
+        price: "",
+        image: ""
+    },
+    {
+        id: 24,
+        name: "Marcipános meggyes pite",
+        ingredients: "",
+        allergens: "",
+        price: "",
+        image: ""
+    },
+    {
+        id: 25,
+        name: "Sacher mousse (gluténmentes)",
+        ingredients: "",
+        allergens: "",
+        price: "",
+        image: ""
+    },
+    {
+        id: 26,
+        name: "Triplacsoki mousse (gluténmentes)",
+        ingredients: "",
+        allergens: "",
+        price: "",
+        image: ""
+    },
+    {
+        id: 27,
+        name: "Körtés karamelltorta",
+        ingredients: "",
+        allergens: "",
+        price: "",
+        image: ""
+    },
+    {
+        id: 28,
+        name: "Málnás sacher",
+        ingredients: "",
+        allergens: "",
+        price: "",
+        image: ""
+    },
+    {
+        id: 29,
+        name: "Eszterházy torta",
+        ingredients: "",
+        allergens: "",
+        price: "",
+        image: ""
+    },
+    {
+        id: 30,
+        name: "Kinder MaxiKing torta",
+        ingredients: "",
+        allergens: "",
+        price: "",
+        image: ""
+    },
+    {
+        id: 31,
+        name: "Oreo torta",
+        ingredients: "",
+        allergens: "",
+        price: "",
+        image: ""
+    }
+]
+
 app.get('/', (req, res) => {
-    res.render('main', {brownies: brownies, cheesecakes: cheesecakes, seasonalCheesecakes: seasonalCheesecakes});
+    res.render('main', {brownies: brownies, cheesecakes: cheesecakes, seasonalCheesecakes: seasonalCheesecakes, specialities: specialities});
 })
 
 app.listen(PORT, () => {

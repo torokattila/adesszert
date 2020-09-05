@@ -134,6 +134,7 @@ html {
   color: white;
   border: 1px solid #e67e83;
   background-color: #e67e83;
+  cursor: pointer;
 }
 
 .cake-image {
@@ -146,6 +147,26 @@ html {
   color: #624143;
   font-family: 'Cairo', sans-serif;
   font-weight: bold;
+}
+
+.modal-close-button {
+  background-color: #fff;
+  color: #e67e83;
+  font-weight: bold;
+  border: 1px solid #e67e83;
+  padding: 8px;
+  border-radius: 7px;
+  cursor: pointer;
+  width: 20%;
+}
+
+.modal-close-button:hover {
+  background-color: #e67e83;
+  color: white;
+}
+
+.modal-close-button:focus {
+  outline: none;
 }
 
 @media only screen and (max-width: 600px) {

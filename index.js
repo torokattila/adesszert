@@ -13,6 +13,7 @@ app.use(bodyParser.urlencoded({
 
 const brownies = [
     {
+        id: 1,
         name: "Klasszikus brownie",
         ingredients: "",
         allergens: "",
@@ -20,6 +21,7 @@ const brownies = [
         image: ""
     },
     {
+        id: 2,
         name: "Túrórudi brownie",
         ingredients: "",
         allergens: "",
@@ -27,6 +29,7 @@ const brownies = [
         image: ""
     },
     {
+        id: 3,
         name: "Sóskaramellás brownie",
         ingredients: "",
         allergens: "",
@@ -34,6 +37,7 @@ const brownies = [
         image: ""
     },
     {
+        id: 4,
         name: "Oreos brownie fehércsokival (glutént tartalmaz)",
         ingredients: "",
         allergens: "",
@@ -41,6 +45,7 @@ const brownies = [
         image: ""
     },
     {
+        id: 5,
         name: "Gesztenyés brownie",
         ingredients: "",
         allergens: "",

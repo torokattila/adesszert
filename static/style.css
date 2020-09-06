@@ -4,6 +4,19 @@ html {
   scroll-behavior: smooth;
 }
 
+.content {
+  animation: fadein 1s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .top-header {
   display: flex;
   height: 130px;
@@ -175,7 +188,6 @@ html {
   bottom: 10%;
   right: 8%;
   border-radius: 50%;
-  height: 60px;
 }
 
 .scroll-up-button {

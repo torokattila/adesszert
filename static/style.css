@@ -1,6 +1,7 @@
 html {
   background-color: #f3ece4;
   margin: 0 auto;
+  scroll-behavior: smooth;
 }
 
 .top-header {
@@ -73,7 +74,7 @@ html {
   padding: 0;
 }
 
-.brownies, .cheesecakes, .seasonalCheesecakes, .specialities, .freeCakes {
+.brownies, .cheesecakes, .seasonalCheesecakes, .specialities, .freeCakes, .scroll-up-button-div {
   background-color: #f3ece4;
   margin: 0 auto;
 }
@@ -169,6 +170,68 @@ html {
   outline: none;
 }
 
+.scroll-up-button-div {
+  position: fixed;
+  bottom: 10%;
+  right: 8%;
+  border-radius: 50%;
+  height: 60px;
+}
+
+.scroll-up-button {
+  border: none;
+  cursor: pointer;
+  position: relative;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 1px solid silver;
+  width: 70px;
+  height: 70px;
+  padding: 10px;
+  box-shadow: 2px 5px 15px -8px rgba(0, 0, 0, 0.59);
+  text-align: center;
+  transition: all 0.2s ease;
+}
+
+.scroll-up-button:hover {
+  background-color: #e67e83;
+  border: 1px solid #e67e83;
+  transition: all 0.2s ease;
+}
+
+.scroll-up-button:focus {
+  outline: none;
+}
+
+.scroll-up-button:active {
+  background-color: #e96067;
+  border: 1px solid #e67e83;
+  outline: none;
+}
+
+.hover-scroll-button-icon {
+  display: none;
+}
+
+.start-scroll-button-icon, .hover-scroll-button-icon {
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding-bottom: 5px;
+  transition: all 0.2s ease;
+}
+
+.scroll-up-button:hover .start-scroll-button-icon {
+  display: none;
+}
+
+.scroll-up-button:hover .hover-scroll-button-icon {
+  display: block;
+}
+
 @media only screen and (max-width: 600px) {
   .top-header {
     display: flex;
@@ -214,5 +277,21 @@ html {
     border-radius: 7px;
     cursor: pointer;
     width: 25%;
+  }
+
+  .scroll-up-button {
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+  }
+
+  .start-scroll-button-icon, .hover-scroll-button-icon {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-bottom: 5px;
   }
 }

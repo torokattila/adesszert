@@ -347,7 +347,7 @@ const freeCakes = [
 ]
 
 app.get('/', (req, res) => {
-    res.render('main', {brownies: brownies, cheesecakes: cheesecakes, seasonalCheesecakes: seasonalCheesecakes, specialities: specialities, freeCakes: freeCakes});
+    res.render('cakes', {brownies: brownies, cheesecakes: cheesecakes, seasonalCheesecakes: seasonalCheesecakes, specialities: specialities, freeCakes: freeCakes});
 })
 
 app.listen(PORT, () => {

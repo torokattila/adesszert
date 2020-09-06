@@ -19,4 +19,16 @@ $(document).ready(function() {
         $('html, body').animate({scrollTop : 0}, -10);
         return false;
     });
+
+    $('.details-button').click(function() {
+        $('.navbar').hide();
+
+        $('.modal-close-button').click(function() {
+            $('.navbar').fadeIn();
+        })
+
+        $('.close').click(function() {
+            $('.navbar').fadeIn();
+        })
+    })
 })

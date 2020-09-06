@@ -22,7 +22,7 @@ html {
   height: 130px;
   position: relative;
   background-color: #ffffff;
-  font-family: 'Leckerli One', cursive;
+  font-family: "Leckerli One", cursive;
 }
 
 .top-header::before,
@@ -73,7 +73,7 @@ html {
 }
 
 .main-title {
-  color: #E47277;
+  color: #e47277;
 }
 
 .adesszert {
@@ -87,15 +87,20 @@ html {
   padding: 0;
 }
 
-.brownies, .cheesecakes, .seasonalCheesecakes, .specialities, .freeCakes, .scroll-up-button-div {
+.brownies,
+.cheesecakes,
+.seasonalCheesecakes,
+.specialities,
+.freeCakes,
+.scroll-up-button-div, .navbar-div {
   background-color: #f3ece4;
   margin: 0 auto;
 }
 
 .brownie-header {
-  color: #624143; 
-  padding-top: 5%; 
-  font-family: 'Leckerli One', cursive;
+  color: #624143;
+  padding-top: 5%;
+  font-family: "Leckerli One", cursive;
 }
 
 .brownie-glutenfree {
@@ -108,7 +113,6 @@ html {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  padding-top: 3%;
 }
 
 .brownie-div {
@@ -122,7 +126,7 @@ html {
 }
 
 .details-button {
-  font-family: 'Cairo', sans-serif;
+  font-family: "Cairo", sans-serif;
   font-weight: bold;
   padding: 10px;
   width: 40%;
@@ -159,7 +163,7 @@ html {
 .cake-title {
   padding-top: 15px;
   color: #624143;
-  font-family: 'Cairo', sans-serif;
+  font-family: "Cairo", sans-serif;
   font-weight: bold;
 }
 
@@ -225,7 +229,8 @@ html {
   display: none;
 }
 
-.start-scroll-button-icon, .hover-scroll-button-icon {
+.start-scroll-button-icon,
+.hover-scroll-button-icon {
   width: 45px;
   height: 45px;
   position: absolute;
@@ -242,6 +247,48 @@ html {
 
 .scroll-up-button:hover .hover-scroll-button-icon {
   display: block;
+}
+
+.navbar-div {
+  padding-top: 2%;
+  position: absolute;
+  padding-left: 3%;
+}
+
+.navbar {
+  width: 200px;
+  margin-left: 5%;
+  border-radius: 25px;
+  background-color: #fff;
+  border: 1px solid silver;
+  position: absolute;
+  z-index: 9000;
+  font-family: "Cairo", sans-serif;
+}
+
+.category-title {
+  padding-right: 20%; 
+  color:#624143;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(98, 65, 67, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler .navbar-toggler-icon:hover {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(63, 42, 43, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler:focus {
+  outline: none;
+}
+
+.nav-link {
+  color: #e67e83;
+}
+
+.nav-link:hover {
+  color: #e96067;
 }
 
 @media only screen and (max-width: 600px) {
@@ -270,12 +317,12 @@ html {
   }
 
   .brownie-header {
-    color: #624143; 
-    padding-top: 5%; 
-    font-family: 'Leckerli One', cursive;
+    color: #624143;
+    padding-top: 5%;
+    font-family: "Leckerli One", cursive;
     font-size: 200%;
   }
-  
+
   .brownie-glutenfree {
     font-size: 50%;
   }
@@ -297,7 +344,8 @@ html {
     padding: 10px;
   }
 
-  .start-scroll-button-icon, .hover-scroll-button-icon {
+  .start-scroll-button-icon,
+  .hover-scroll-button-icon {
     width: 35px;
     height: 35px;
     position: absolute;
@@ -305,5 +353,21 @@ html {
     left: 50%;
     transform: translate(-50%, -50%);
     padding-bottom: 5px;
+  }
+
+  .navbar {
+    background-color: #fff;
+    width: 180px;
+    margin-left: 5%;
+    border-radius: 25px;
+    color: #fff;
+  }
+
+  .category-title {
+    padding-right: 15%; color:#624143;
+  }
+
+  .brownies {
+    padding-top: 15%;
   }
 }

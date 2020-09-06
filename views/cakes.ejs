@@ -8,11 +8,11 @@
     <meta name="HandheldFriendly" content="true">
     <link rel="stylesheet" href="/style.css">
     <link rel="shortcut icon" href="/whisk.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <title>A desszert - Édes üzem</title>
@@ -30,7 +30,36 @@
                 </div>
             </div>
         </header>
+
+        <div class="navbar-div">
+            <nav class="navbar ">
+                <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#categories">
+                    <span class="navbar-toggler-icon" style="width: 20px; height: 20px;"></span>
+                </button>
+                <span class="category-title">Kategóriák</span>
+                <div class="collapse navbar-collapse" id="categories">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Brownie-k</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Sajttorták</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Szezonális sajttorták</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Különlegességek</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Mentes sütik</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
         
+
         <div class="brownies">
             <h1 align="center" class="brownie-header">Brownie-k:<br><span
                     class="brownie-glutenfree">(gluténmentes)</span></h1>
@@ -38,7 +67,8 @@
                 <% for (let i = 0; i < brownies.length; i++) { %>
                 <% var counter = 0; %>
                 <div class="brownie-div">
-                    <a href="#<%=brownies[i].id%>" data-toggle="modal" data-target="#<%=brownies[i].id%>"><img class="cake-image" src="/brownie.jpg" alt="cheesecake"></a>
+                    <a href="#<%=brownies[i].id%>" data-toggle="modal" data-target="#<%=brownies[i].id%>"><img
+                            class="cake-image" src="/brownie.jpg" alt="cheesecake"></a>
                     <p class="cake-title"><%=brownies[i].name%></p>
                     <button class="details-button" type="button" data-toggle="modal"
                         data-target="#<%=brownies[i].name%>">Részletek</button>
@@ -87,7 +117,8 @@
                 <% for (let i = 0; i < cheesecakes.length; i++) { %>
                 <% var counter = 0; %>
                 <div class="brownie-div">
-                    <a href="#<%=cheesecakes[i].id%>" data-toggle="modal" data-target="#<%=cheesecakes[i].id%>"><img class="cake-image" src="/cheesecake.jpg" alt="cheesecake"></a>
+                    <a href="#<%=cheesecakes[i].id%>" data-toggle="modal" data-target="#<%=cheesecakes[i].id%>"><img
+                            class="cake-image" src="/cheesecake.jpg" alt="cheesecake"></a>
                     <p class="cake-title"><%=cheesecakes[i].name%></p>
                     <button class="details-button" type="button" data-toggle="modal"
                         data-target="#<%=cheesecakes[i].name%>">Részletek</button>
@@ -136,7 +167,9 @@
                 <% for (let i = 0; i < seasonalCheesecakes.length; i++) { %>
                 <% var counter = 0; %>
                 <div class="brownie-div">
-                    <a href="#<%=seasonalCheesecakes[i].id%>" data-toggle="modal" data-target="#<%=seasonalCheesecakes[i].id%>"><img class="cake-image" src="/ferrero.jpg" alt="cheesecake"></a>
+                    <a href="#<%=seasonalCheesecakes[i].id%>" data-toggle="modal"
+                        data-target="#<%=seasonalCheesecakes[i].id%>"><img class="cake-image" src="/ferrero.jpg"
+                            alt="cheesecake"></a>
                     <p class="cake-title"><%=seasonalCheesecakes[i].name%></p>
                     <button class="details-button" type="button" data-toggle="modal"
                         data-target="#<%=seasonalCheesecakes[i].name%>">Részletek</button>
@@ -185,7 +218,8 @@
                 <% for (let i = 0; i < specialities.length; i++) { %>
                 <% var counter = 0; %>
                 <div class="brownie-div">
-                    <a href="#<%=specialities[i].id%>" data-toggle="modal" data-target="#<%=specialities[i].id%>"><img class="cake-image" src="/speciality.jpg" alt="cheesecake"></a>
+                    <a href="#<%=specialities[i].id%>" data-toggle="modal" data-target="#<%=specialities[i].id%>"><img
+                            class="cake-image" src="/speciality.jpg" alt="cheesecake"></a>
                     <p class="cake-title"><%=specialities[i].name%></p>
                     <button class="details-button" type="button" data-toggle="modal"
                         data-target="#<%=specialities[i].name%>">Részletek</button>
@@ -229,13 +263,14 @@
         </div>
 
         <div class="freeCakes">
-            <h1 align="center" class="brownie-header">Mentes sütik:<br><span
-                class="brownie-glutenfree">(cukor, glutén- és tejmentes)</span></h1>
+            <h1 align="center" class="brownie-header">Mentes sütik:<br><span class="brownie-glutenfree">(cukor, glutén-
+                    és tejmentes)</span></h1>
             <div class="brownie-container">
                 <% for (let i = 0; i < freeCakes.length; i++) { %>
                 <% var counter = 0; %>
                 <div class="brownie-div">
-                    <a href="#<%=freeCakes[i].id%>" data-toggle="modal" data-target="#<%=freeCakes[i].id%>"><img class="cake-image" src="/mentes.jpg" alt="cheesecake"></a>
+                    <a href="#<%=freeCakes[i].id%>" data-toggle="modal" data-target="#<%=freeCakes[i].id%>"><img
+                            class="cake-image" src="/mentes.jpg" alt="cheesecake"></a>
                     <p class="cake-title"><%=freeCakes[i].name%></p>
                     <button class="details-button" type="button" data-toggle="modal"
                         data-target="#<%=freeCakes[i].name%>">Részletek</button>

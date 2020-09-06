@@ -40,19 +40,19 @@
                 <div class="collapse navbar-collapse" id="categories">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a href="#" class="nav-link">Brownie-k</a>
+                            <a href="#brownie-part" class="nav-link">Brownie-k</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">Sajttorták</a>
+                            <a href="#cheesecake-part" class="nav-link">Sajttorták</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">Szezonális sajttorták</a>
+                            <a href="#seasonal-cheesecake-part" class="nav-link">Szezonális sajttorták</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">Különlegességek</a>
+                            <a href="#specialities-part" class="nav-link">Különlegességek</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">Mentes sütik</a>
+                            <a href="#free-cakes-part" class="nav-link">Mentes sütik</a>
                         </li>
                     </ul>
                 </div>
@@ -60,7 +60,7 @@
         </div>
         
 
-        <div class="brownies">
+        <div class="brownies" id="brownie-part">
             <h1 align="center" class="brownie-header">Brownie-k:<br><span
                     class="brownie-glutenfree">(gluténmentes)</span></h1>
             <div class="brownie-container">
@@ -111,7 +111,7 @@
             </div>
         </div>
 
-        <div class="cheesecakes">
+        <div class="cheesecakes" id="cheesecake-part">
             <h1 align="center" class="brownie-header">Sajttorták:</h1>
             <div class="brownie-container">
                 <% for (let i = 0; i < cheesecakes.length; i++) { %>
@@ -161,7 +161,7 @@
             </div>
         </div>
 
-        <div class="seasonalCheesecakes">
+        <div class="seasonalCheesecakes" id="seasonal-cheesecake-part">
             <h1 align="center" class="brownie-header">Szezonális sajttorták:</h1>
             <div class="brownie-container">
                 <% for (let i = 0; i < seasonalCheesecakes.length; i++) { %>
@@ -212,7 +212,7 @@
             </div>
         </div>
 
-        <div class="specialities">
+        <div class="specialities" id="specialities-part">
             <h1 align="center" class="brownie-header">Különlegességek:</h1>
             <div class="brownie-container">
                 <% for (let i = 0; i < specialities.length; i++) { %>
@@ -262,7 +262,7 @@
             </div>
         </div>
 
-        <div class="freeCakes">
+        <div class="freeCakes" id="free-cakes-part">
             <h1 align="center" class="brownie-header">Mentes sütik:<br><span class="brownie-glutenfree">(cukor, glutén-
                     és tejmentes)</span></h1>
             <div class="brownie-container">

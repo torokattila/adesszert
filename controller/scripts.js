@@ -25,10 +25,32 @@ $(document).ready(function() {
 
         $('.modal-close-button').click(function() {
             $('.navbar').fadeIn();
-        })
+        });
 
         $('.close').click(function() {
             $('.navbar').fadeIn();
-        })
-    })
+        });
+
+        $(document).mouseup(function(e) {
+            let container = $('.modal-dialog');
+            if (!container.is(e.target) && container.has(e.target).length === 0) {
+                $('.navbar').fadeIn();
+            }
+        });
+    });
+
+    $('.cake-image').click(function() {
+        $('.navbar').hide();
+
+        $('.close').click(function() {
+            $('.navbar').fadeIn();
+        });
+
+        $(document).mouseup(function(e) {
+            let container = $('.modal-dialog');
+            if (!container.is(e.target) && container.has(e.target).length === 0) {
+                $('.navbar').fadeIn();
+            }
+        });
+    });
 })

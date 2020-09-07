@@ -1,5 +1,5 @@
-html {
-  background-color: #f3ece4;
+html, body {
+  background-color: #f3ece4!important;
   margin: 0 auto;
   scroll-behavior: smooth;
 }
@@ -98,6 +98,36 @@ html {
   background-color: #f3ece4;
   margin: 0 auto;
 }
+
+.horizontal {
+  background-color: #f3ece4;
+  margin: 0 auto;
+  width: 160px;
+  padding-top: 5%;
+}
+
+.imageheader {
+  display: flex;
+  flex-direction: row;
+}
+
+.imageheader:before, .imageheader:after {
+  content: "";
+  flex: 1 1;
+  border-bottom: 1px solid silver;
+  margin: auto;
+  padding: 0;
+  border-width: 10%;
+}
+
+/* .line {
+  margin: 0em; 
+  color: blue; 
+  border: 1px solid silver;
+  width: 20%;
+  margin: auto;
+  background-image:url('cupcake.png');
+} */
 
 .brownie-header {
   color: #624143;

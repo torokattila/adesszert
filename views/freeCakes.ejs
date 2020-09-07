@@ -1,0 +1,50 @@
+<div class="freeCakes" id="free-cakes-part">
+    <h1 align="center" class="brownie-header">Mentes sütik:<br><span class="brownie-glutenfree">(cukor, glutén-
+            és tejmentes)</span></h1>
+    <div class="brownie-container">
+        <% for (let i = 0; i < freeCakes.length; i++) { %>
+        <% var counter = 0; %>
+        <div class="brownie-div">
+            <a href="#<%=freeCakes[i].id%>" data-toggle="modal" data-target="#<%=freeCakes[i].id%>"><img
+                    class="cake-image" src="/mentes.jpg" alt="cheesecake"></a>
+            <p class="cake-title"><%=freeCakes[i].name%></p>
+            <button class="details-button" type="button" data-toggle="modal"
+                data-target="#<%=freeCakes[i].name%>">Részletek</button>
+        </div>
+
+        <div id="<%=freeCakes[i].id%>" class="modal fade" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img src="/mentes.jpg" alt="" class="img-fluid">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="<%=freeCakes[i].name%>" tabindex="-1">
+            <div class="modal-dialog" id="<%=freeCakes[i].name%>">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 style="color:#624143"><%=freeCakes[i].name%></h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <div class="modal-body">
+                        <h6 style="text-align: left; color: #624143">Összetevők:</h6>
+                        <p style="text-align: left;">Lorem ipsum dolor sit amet</p>
+                        <h6 style="text-align: left; color: #624143"">Allergének:</h6>
+                        <p style=" text-align: left;">Lorem ipsum dolor sit amet</p>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="modal-close-button" data-dismiss="modal">Bezár</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <% counter++; %>
+        <% } %>
+    </div>
+</div>

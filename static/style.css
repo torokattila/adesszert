@@ -331,6 +331,44 @@ body {
   opacity: 0.7;
 }
 
+footer {
+  margin-top: 40px;
+  width: 100%;
+  height: 400px;
+  background-image: url('footer.png');
+  font-family: 'Arvo', serif;
+}
+
+.footer-contact-title {
+  padding-top: 4%;
+  padding-left: 10%;
+  color: whitesmoke;
+  text-transform: uppercase;
+}
+
+.footer-phone-number {
+  padding-left: 10%;
+  color: silver;
+  padding-top: 2%;
+}
+
+.footer-email {
+  padding-left: 10%;
+  color: silver;
+}
+
+.phone-link, .email-link {
+  color: #E47277;
+  font-size: larger;
+  padding-left: 10px;
+  letter-spacing: 1px;
+}
+
+.phone-link:hover, .email-link:hover {
+  text-decoration: none;
+  color: #E47277;
+}
+
 @media only screen and (max-width: 600px) {
   .top-header {
     display: flex;
@@ -410,5 +448,20 @@ body {
 
   .brownies {
     padding-top: 15%;
+  }
+
+  footer {
+    font-size: 10px;
+    height: 500px;
+    text-align: center;
+  }
+
+  .footer-contact-title {
+    padding-top: 15%;
+    padding-left: 0%;
+  }
+
+  .footer-phone-number, .footer-email {
+    padding-left: 0%;
   }
 }

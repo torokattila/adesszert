@@ -53,4 +53,23 @@ $(document).ready(function() {
             }
         });
     });
+
+    $('.search-icon').click(function() {
+        $('.navbar').hide();
+
+        $('.modal-close-button').click(function() {
+            $('.navbar').fadeIn();
+        });
+
+        $('.close').click(function() {
+            $('.navbar').fadeIn();
+        });
+
+        $(document).mouseup(function(e) {
+            let container = $('.modal-dialog');
+            if (!container.is(e.target) && container.has(e.target).length === 0) {
+                $('.navbar').fadeIn();
+            }
+        });
+    });
 })

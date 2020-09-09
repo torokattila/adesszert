@@ -369,6 +369,30 @@ footer {
   color: #E47277;
 }
 
+.social {
+  padding-top: 3%;
+  padding-left: 9.5%;
+}
+
+.follow {
+  color: whitesmoke;
+}
+
+.icons {
+  padding-top: 1%;
+}
+
+.facebook {
+  width: 75px;
+  height: 75px;
+  margin-right: 1%;
+}
+
+.instagram {
+  width: 60px;
+  height: 60px;
+}
+
 @media only screen and (max-width: 600px) {
   .top-header {
     display: flex;
@@ -463,5 +487,35 @@ footer {
 
   .footer-phone-number, .footer-email {
     padding-left: 0%;
+  }
+
+  .footer-phone-number {
+    padding-right: 6%;
+  }
+
+  .social {
+    text-align: center;
+    padding-top: 10%;
+    margin-right: 10%;
+    padding-left: 10%;
+  }
+
+  .follow {
+    text-transform: uppercase;
+  }
+  
+  .icons {
+    padding-top: 1%;
+  }
+  
+  .facebook {
+    width: 75px;
+    height: 75px;
+    margin-right: 3%;
+  }
+  
+  .instagram {
+    width: 60px;
+    height: 60px;
   }
 }

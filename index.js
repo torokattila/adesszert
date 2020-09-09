@@ -121,7 +121,7 @@ const cheesecakes = [
     },
     {
         id: 14,
-        name: "Fehércsokis joghurttorta (feketeribizlivel/passió gyümolccsel)",
+        name: "Fehércsokis joghurttorta (feketeribizlivel/passió gyümölccsel)",
         ingredients: "",
         allergens: "",
         price: "",

@@ -32,18 +32,30 @@
 
                     <div class="modal-body">
                         <h6 style="text-align: left; color: #624143">Összetevők:</h6>
-                        <p style="text-align: left;">Lorem ipsum dolor sit amet</p>
-                        <h6 style="text-align: left; color: #624143"">Allergének:</h6>
-                        <p style=" text-align: left;">Lorem ipsum dolor sit amet</p>
-                    </div>
+                        <div style="margin-top: 20px; margin-bottom: 20px;">
+                            <% let ingredients = brownies[i].ingredients; %>
+                            <% for (let i = 0; i < ingredients.length; i++) { %>
+                            <span class="ingredient-span"><%= ingredients[i] %></span>
+                            <% } %>
+                        </div>
 
-                    <div class="modal-footer">
-                        <button type="button" class="modal-close-button" data-dismiss="modal">Bezár</button>
-                    </div>
+                        <h6 style="text-align: left; color: #624143"">Allergének:</h6>
+                        <div style="margin-top: 20px; margin-bottom: 20px;">
+                            <% let allergens = brownies[i].allergens; %>
+                        <% for (let i = 0; i < allergens.length; i++) { %>
+                            <span class=" allergen-span"><%= allergens[i] %></span>
+                            <% } %>
+                        </div>
+
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="modal-close-button" data-dismiss="modal">Bezár</button>
                 </div>
             </div>
         </div>
-        <% counter++; %>
-        <% } %>
     </div>
+    <% counter++; %>
+    <% } %>
+</div>
 </div>

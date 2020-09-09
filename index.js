@@ -15,41 +15,36 @@ const brownies = [
     {
         id: 1,
         name: "Klasszikus brownie",
-        ingredients: "",
-        allergens: "",
-        price: "",
+        ingredients: ['étcsokoládé', 'tej', 'tejszín', 'holland kakaópor', 'tojás', 'cukor', 'só'],
+        allergens: ['tojás', 'tejtermékek', 'szójalecitin'],
         image: ""
     },
     {
         id: 2,
         name: "Túrórudi brownie",
-        ingredients: "",
-        allergens: "",
-        price: "",
+        ingredients: ['étcsokoládé', 'vaj', 'tejszín', 'holland kakaópor', 'tojás', 'cukor', 'só', 'túró', 'vanília', 'zselatin', 'citromhéj', 'túrórudi'],
+        allergens: ['tojás', 'tejtermékek', 'szójalecitin'],
         image: ""
     },
     {
         id: 3,
         name: "Sóskaramellás brownie",
-        ingredients: "",
-        allergens: "",
-        price: "",
+        ingredients: ['étcsokoládé', 'vaj', 'tejszín', 'holland kakaópor', 'tojás', 'cukor', 'só', 'pörkölt mogyoró'],
+        allergens: ['tojás', 'tejtermékek', 'szójalecitin', 'diófélék'],
         image: ""
     },
     {
         id: 4,
-        name: "Oreos brownie fehércsokival (glutént tartalmaz)",
-        ingredients: "",
-        allergens: "",
-        price: "",
+        name: "Oreos brownie fehércsokoládéval (glutént tartalmaz)",
+        ingredients: ['étcsokoláde', 'vaj', 'tejszín', 'holland kakaópor', 'tojás', 'cukor', 'só', 'oreo keksz', 'fehércsokoládé'],
+        allergens: ['tojás', 'tejtermékek', 'szójalecitin', 'glutént tartalmazó gabona (búza, rozs, árpa, zab, tönköly, kamut-búza vagy ezek hibrid változatai)', ],
         image: ""
     },
     {
         id: 5,
         name: "Gesztenyés brownie",
-        ingredients: "",
-        allergens: "",
-        price: "",
+        ingredients: ['étcsokoládé', 'vaj', 'tejszín', 'holland kakaópor', 'tojás', 'cukor', 'só', 'gesztenyemassza', 'hideg krémpor'],
+        allergens: ['tojás', 'tejtermékek', 'szójalecitin'],
         image: ""
     }
 ]
@@ -58,40 +53,36 @@ const cheesecakes = [
     {
         id: 6,
         name: "Sósmogyorós sajttorta",
-        ingredients: "",
-        allergens: "",
-        price: "",
+        ingredients: ['zabkeksz', 'vaj', 'sós földimogyoró', 'mascarpone', 'tejföl', 'tejszín', 'cukor', 'vanília', 'kukoricakeményítő', 'tojás', 'só'],
+        allergens: ['tojás', 'tejtermékek', 'glutént tartalmazó gabona (búza, rozs, árpa, zab, tönköly, kamut-búza vagy ezek hibrid változatai)', 'diófélék'],
         image: ""
     },
     {
         id: 7,
-        name: "Áfonyás \"New York\" cheesecake",
-        ingredients: "",
-        allergens: "",
-        price: "",
+        name: "Áfonyás \"New York\" sajttorta",
+        ingredients: ['zabkeksz', 'vaj', 'mascarpone', 'tejföl', 'tejszín', 'cukor', 'vanília', 'kukoricakeményítő', 'tojás', 'áfonya'],
+        allergens: ['tojás', 'tejtermékek', ' glutént tartalmazó gabona (búza, rozs, árpa, zab, tönköly, kamut-búza vagy ezek hibrid változatai)', 'diófélék'],
         image: ""
     },
     {
         id: 8,
         name: "Epres sajttorta",
-        ingredients: "",
-        allergens: "",
-        price: "",
+        ingredients: ['zabkeksz', 'vaj', 'mascarpone', 'tejföl', 'tejszín', 'cukor', 'vanília', 'kukoricakeményítő', 'tojás', 'eper', 'agar-agar'],
+        allergens: ['tojás', 'glutént tartalmazó gabona (búza, rozs, árpa, zab, tönköly, kamut-búza vagy ezek hibrid változatai)', 'tejtermékek', 'diófélék'],
         image: ""
     },
     {
         id: 9,
-        name: "Oreos sajttorta",
-        ingredients: "",
-        allergens: "",
-        price: "",
+        name: "Oreos-csokis sajttorta",
+        ingredients: ['oreo keksz', 'vaj', 'mascarpone', 'tejszín', 'cukor', 'vanília', 'étcsokoládé', 'zselatin', 'hideg krémpor'],
+        allergens: ['szójalecitin', 'tejtermékek', 'glutént tartalmazó gabona (búza, rozs, árpa, zab, tönköly, kamut-búza vagy ezek hibrid változatai)'],
         image: ""
     },
     {
         id: 10,
-        name: "Snickers sajttorta (mogyoróvajjal)",
-        ingredients: "",
-        allergens: "",
+        name: "Snickers sajttorta",
+        ingredients: ['zabkeksz', 'vaj', 'sós földimogyoró', 'mascarpone', 'tejföl', 'tejszín', 'cukor', 'vanília', 'kukoricakeményítő', 'tojás', 'mogyoróvaj'],
+        allergens: ['szójalecitin', 'tejtermékek', 'glutént tartalmazó gabona (búza, rozs, árpa, zab, tönköly, kamut-búza vagy ezek hibrid változatai)', 'mogyorófélék', 'tojás'],
         price: "",
         image: ""
     },

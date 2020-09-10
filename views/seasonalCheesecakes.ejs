@@ -33,18 +33,37 @@
 
                     <div class="modal-body">
                         <h6 style="text-align: left; color: #624143">Összetevők:</h6>
-                        <p style="text-align: left;">Lorem ipsum dolor sit amet</p>
+                        <div style="margin-bottom: 20px; text-align: left;">
+                            <% let ingredients = seasonalCheesecakes[i].ingredients; %>
+                            <% for (let i = 0; i < ingredients.length; i++) { %>
+                            <span class="ingredient-span"><%= ingredients[i] %></span>
+                            <% } %>
+                        </div>
+
                         <h6 style="text-align: left; color: #624143"">Allergének:</h6>
-                        <p style=" text-align: left;">Lorem ipsum dolor sit amet</p>
+                        <div style=" text-align: left;">
+                            <% let allergens = seasonalCheesecakes[i].allergens; %>
+                            <% for (let i = 0; i < allergens.length; i++) { %>
+                            <span class="allergen-span"><%= allergens[i] %></span>
+                            <% } %>
                     </div>
 
-                    <div class="modal-footer">
-                        <button type="button" class="modal-close-button" data-dismiss="modal">Bezár</button>
+                    <% if (!seasonalCheesecakes[i].ingredients.includes("liszt")) { %>
+                    <h6 style="text-align: left; color: #624143">Mentes ettől:</h6>
+                    <div style="text-align: left;">
+                        <span class="ingredient-span">liszt</span>
                     </div>
+                    <% } %>
+
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="modal-close-button" data-dismiss="modal">Bezár</button>
                 </div>
             </div>
         </div>
-        <% counter++; %>
-        <% } %>
     </div>
+    <% counter++; %>
+    <% } %>
+</div>
 </div>

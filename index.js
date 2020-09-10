@@ -181,9 +181,47 @@ const seasonalCheesecakes = [
     }
 ]
 
-const specialities = [
+const pies = [
     {
         id: 24,
+        name: "Rákóczi túrós pite",
+        ingredients: ['búzaliszt', 'vaj', 'tojás', 'cukor', 'só', 'víz', 'túró', 'vanília', 'baracklekvár', 'citromhéj', 'tejszín', 'tejszínhab', 'habcsók (tojásfehérje, cukor)', 'mandula'],
+        allergens: ['Glutént tartalmazó gabona (búza, rozs, árpa, zab, tönköly, kamut-búza vagy ezek hibrid változatai)', 'tejtermékek', 'diófélék', 'tojás'],
+        image: ""
+    },
+    {
+        id: 25,
+        name: "Meggyes-marcipános pite",
+        ingredients: ['búzaliszt', 'vaj', 'tejföl', 'tojás', 'cukor', 'só', 'víz', 'meggy', 'kukoricakeményítő', 'fahéj', 'mandula', 'marcipán'],
+        allergens: ['Glutént tartalmazó gabona (búza, rozs, árpa, zab, tönköly, kamut-búza vagy ezek hibrid változatai)', 'tejtermékek', 'diófélék'],
+        image: ""
+    },
+    {
+        id: 26,
+        name: "Almás pite",
+        ingredients: ['búzaliszt', 'vaj', 'tejföl', 'tojás', 'cukor', 'só', 'víz', 'alma', 'kukoricakeményítő', 'fahéj', 'mandula', 'dió', 'citrom'],
+        allergens: ['Glutént tartalmazó gabona (búza, rozs, árpa, zab, tönköly, kamut-búza vagy ezek hibrid változatai)', 'tejtermékek', 'diófélék'],
+        image: ""
+    },
+    {
+        id: 27,
+        name: "Meggyes pite",
+        ingredients: ['búzaliszt', 'vaj', 'tejföl', 'tojás', 'cukor', 'só', 'víz', 'meggy', 'kukoricakeményítő', 'fahéj', 'mandula', 'citrom'],
+        allergens: ['Glutént tartalmazó gabona (búza, rozs, árpa, zab, tönköly, kamut-búza vagy ezek hibrid változatai)', 'tejtermékek', 'diófélék', 'tojás'],
+        image: ""
+    },
+    {
+        id: 28,
+        name: "Citromkrémes pite",
+        ingredients: ['búzaliszt', 'vaj', 'tejföl', 'tojás', 'cukor', 'só', 'víz', 'citromlé', 'tejszín', 'zselatin', 'pirított mandula'],
+        allergens: ['Glutént tartalmazó gabona (búza, rozs, árpa, zab, tönköly, kamut-búza vagy ezek hibrid változatai)', 'tejtermékek', 'szójalecitin', 'diófélék (mandula)'],
+        image: ""
+    }
+]
+
+const specialities = [
+    {
+        id: 29,
         name: "Chilis-mangós fehércsokimousse",
         ingredients: "",
         allergens: "",
@@ -191,7 +229,7 @@ const specialities = [
         image: ""
     },
     {
-        id: 25,
+        id: 30,
         name: "Narancsos-passiós sajttorta",
         ingredients: "",
         allergens: "",
@@ -199,7 +237,7 @@ const specialities = [
         image: ""
     },
     {
-        id: 26,
+        id: 31,
         name: "Sült túrótorta (gluténmentes)",
         ingredients: "",
         allergens: "",
@@ -207,7 +245,7 @@ const specialities = [
         image: ""
     },
     {
-        id: 27,
+        id: 32,
         name: "Marcipános meggyes pite",
         ingredients: "",
         allergens: "",
@@ -215,7 +253,7 @@ const specialities = [
         image: ""
     },
     {
-        id: 28,
+        id: 33,
         name: "Sacher mousse (gluténmentes)",
         ingredients: "",
         allergens: "",
@@ -223,7 +261,7 @@ const specialities = [
         image: ""
     },
     {
-        id: 29,
+        id: 34,
         name: "Triplacsoki mousse (gluténmentes)",
         ingredients: "",
         allergens: "",
@@ -231,7 +269,7 @@ const specialities = [
         image: ""
     },
     {
-        id: 30,
+        id: 35,
         name: "Málnás sacher",
         ingredients: "",
         allergens: "",
@@ -239,7 +277,7 @@ const specialities = [
         image: ""
     },
     {
-        id: 31,
+        id: 36,
         name: "Eszterházy torta",
         ingredients: "",
         allergens: "",
@@ -247,7 +285,7 @@ const specialities = [
         image: ""
     },
     {
-        id: 32,
+        id: 37,
         name: "Kinder MaxiKing torta",
         ingredients: "",
         allergens: "",
@@ -258,7 +296,7 @@ const specialities = [
 
 const freeCakes = [
     {
-        id: 33, 
+        id: 38, 
         name: "Mákos guba torta",
         ingredients: "",
         allergens: "",
@@ -266,7 +304,7 @@ const freeCakes = [
         image: ""
     },
     {
-        id: 34,
+        id: 39,
         name: "Túrótorta (kölesből)",
         ingredients: "",
         allergens: "",
@@ -274,7 +312,7 @@ const freeCakes = [
         image: ""
     },
     {
-        id: 35,
+        id: 40,
         name: "Raffaello (kókuszos vaníliás)",
         ingredients: "",
         allergens: "",
@@ -282,7 +320,7 @@ const freeCakes = [
         image: ""
     },
     {
-        id: 36,
+        id: 41,
         name: "Málnás-étcsokis \"sajttorta\"",
         ingredients: "",
         allergens: "",
@@ -290,7 +328,7 @@ const freeCakes = [
         image: ""
     },
     {
-        id: 37,
+        id: 42,
         name: "Csokis kókuszos \"sajttorta\"",
         ingredients: "",
         allergens: "",
@@ -298,7 +336,7 @@ const freeCakes = [
         image: ""
     },
     {
-        id: 38,
+        id: 43,
         name: "Citromkrémes \"sajttorta\"",
         ingredients: "",
         allergens: "",
@@ -306,7 +344,7 @@ const freeCakes = [
         image: ""
     },
     {
-        id: 39,
+        id: 44,
         name: "Málnás-mangós \"sajttorta\"",
         ingredients: "",
         allergens: "",
@@ -314,7 +352,7 @@ const freeCakes = [
         image: ""
     },
     {
-        id: 40,
+        id: 45,
         name: "Csupa csoki \"sajttorta\"",
         ingredients: "",
         allergens: "",
@@ -322,7 +360,7 @@ const freeCakes = [
         image: ""
     },
     {
-        id: 41,
+        id: 46,
         name: "Paleo brownie (magvakkal)",
         ingredients: "",
         allergens: "",
@@ -332,7 +370,7 @@ const freeCakes = [
 ]
 
 app.get('/', (req, res) => {
-    res.render('cakes', {brownies: brownies, cheesecakes: cheesecakes, seasonalCheesecakes: seasonalCheesecakes, specialities: specialities, freeCakes: freeCakes});
+    res.render('cakes', {brownies: brownies, cheesecakes: cheesecakes, seasonalCheesecakes: seasonalCheesecakes, pies: pies, specialities: specialities, freeCakes: freeCakes});
 })
 
 app.listen(PORT, () => {

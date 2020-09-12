@@ -433,7 +433,7 @@ footer {
 }
 
 .navigation-list-item a:hover {
-  color: #e47277;
+  color: #e47277!important;
   text-decoration: none;
   transition: all 0.2s ease;
 }

@@ -370,9 +370,25 @@ const freeCakes = [
 ]
 
 app.get('/', (req, res) => {
+    res.render('main');
+});
+
+app.get('/main', (req, res) => {
+    res.render('main');
+});
+
+app.get('/cakes', (req, res) => {
     res.render('cakes', {brownies: brownies, cheesecakes: cheesecakes, seasonalCheesecakes: seasonalCheesecakes, pies: pies, specialities: specialities, freeCakes: freeCakes});
+});
+
+app.get('/order', (req, res) => {
+    res.render('order');
+});
+
+app.get('/contact', (req, res) => {
+    res.render('contact');
 })
 
 app.listen(PORT, () => {
     console.log(`App is listening on PORT ${PORT}`);
-})
+});

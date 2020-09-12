@@ -66,4 +66,28 @@ $(document).ready(function() {
             }
         });
     });
+
+    if (window.location.href.indexOf('main') > -1) {
+        $('#main-page').css('color', '#e47277');
+    } else {
+        $('#main-page').css('color', '#5e3c3e');
+    }
+
+    if (window.location.href.indexOf('cakes') > -1) {
+        $('#cakes-page').css('color', '#e47277');
+    } else {
+        $('#cakes-page').css('color', '#5e3c3e');
+    }
+
+    if (window.location.href.indexOf('order') > -1) {
+        $('#order-page').css('color', '#e47277');
+    } else {
+        $('#order-page').css('color', '#5e3c3e');
+    }
+
+    if (window.location.href.indexOf('contact') > -1) {
+        $('#contact-page').css('color', '#e47277');
+    } else {
+        $('#contact-page').css('color', '#5e3c3e');
+    }
 })

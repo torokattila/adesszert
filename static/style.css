@@ -20,7 +20,7 @@ body {
 
 .top-header {
   display: flex;
-  height: 130px;
+  height: 150px;
   position: relative;
   background-color: #ffffff;
   font-family: "Leckerli One", cursive;
@@ -403,6 +403,52 @@ footer {
   margin-top: 2px;
 }
 
+.navigations {
+  font-family: 'Patrick Hand', cursive;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  right: 5px;
+  bottom: 2px;
+  margin-right: 5%;
+  position: absolute;
+}
+
+.navigation-items {
+  list-style-type: none;
+  overflow: hidden;
+}
+
+.navigation-list-item {
+  float: left;
+}
+
+.navigation-list-item a {
+  display: block;
+  text-align: center;
+  padding: 5px;
+  text-decoration: none;
+  color: #5e3c3e;
+  transition: all 0.2s ease;
+}
+
+.navigation-list-item a:hover {
+  color: #e47277;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.navbar-menu {
+  right: 4%;
+  padding-top: 2%;
+  display: none;
+  position: absolute;
+}
+
+.menu-navbar {
+  width: 100px;
+}
+
 @media only screen and (max-width: 600px) {
   .top-header {
     display: flex;
@@ -470,7 +516,7 @@ footer {
   .navbar {
     background-color: #fff;
     width: 180px;
-    margin-left: 5%;
+    margin-left: 2%;
     border-radius: 25px;
     color: #fff;
   }
@@ -527,5 +573,17 @@ footer {
   .instagram {
     width: 60px;
     height: 60px;
+  }
+
+  .navigations {
+    display: none;
+  }
+
+  .menu-navbar {
+    width: 100px;
+  }
+
+  .navbar-menu {
+    display: block;
   }
 }

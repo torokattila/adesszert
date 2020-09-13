@@ -334,13 +334,12 @@ body {
 footer {
   margin-top: 40px;
   width: 100%;
-  height: 400px;
+  height: 350px;
   background-image: url('footer.png');
   font-family: 'Arvo', serif;
 }
 
 .footer-contact-title {
-  padding-top: 4%;
   padding-left: 10%;
   color: whitesmoke;
   text-transform: uppercase;
@@ -369,17 +368,13 @@ footer {
   color: #E47277;
 }
 
-.social {
-  padding-top: 3%;
-  padding-left: 9.5%;
-}
-
 .follow {
   color: whitesmoke;
 }
 
 .icons {
   padding-top: 1%;
+  padding-left: 7%;
 }
 
 .facebook {
@@ -447,6 +442,52 @@ footer {
 
 .menu-navbar {
   width: 100px;
+}
+
+.footer-menu {
+  text-align: left;
+  margin: 0 15% 0 13%;
+}
+
+.footer-menu-title {
+  text-transform: uppercase;
+  color: whitesmoke;
+  margin-left: 30%;
+}
+
+.footer-ul {
+  padding-top: 20px;
+  list-style-type: none;
+  position: absolute;
+  margin-left: -1.5%;
+}
+
+.footer-li {
+  margin-bottom: 20px;
+}
+
+.footer-li a {
+  color: whitesmoke;
+  transition: all 0.3s ease;
+}
+
+.footer-li a:hover {
+  color: #E47277;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  padding-left: 10px;
+}
+
+.footer-div {
+  padding-top: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-right: 7%;
+}
+
+.phone-link-paragraph {
+  padding-left: 12px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -532,12 +573,11 @@ footer {
 
   footer {
     font-size: 10px;
-    height: 500px;
+    height: 600px;
     text-align: center;
   }
 
   .footer-contact-title {
-    padding-top: 15%;
     padding-left: 0%;
   }
 
@@ -545,13 +585,8 @@ footer {
     padding-left: 0%;
   }
 
-  .footer-phone-number {
-    padding-right: 6%;
-  }
-
   .social {
     text-align: center;
-    padding-top: 10%;
     margin-right: 10%;
     padding-left: 10%;
   }
@@ -562,6 +597,7 @@ footer {
   
   .icons {
     padding-top: 1%;
+    margin-left: -10%;
   }
   
   .facebook {
@@ -585,5 +621,32 @@ footer {
 
   .navbar-menu {
     display: block;
+  }
+
+  .footer-div {
+    padding-top: 12%;
+    display: flex;
+    margin-left: 4%;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-menu {
+    padding-left: 11%;
+  }
+
+  .footer-ul {
+    position: relative;
+    padding-left: 37%;
+    padding-top: 10px;
+    list-style-type: none;
+  }
+
+  .phone-link-paragraph {
+    padding-left: 0;
+  }
+
+  .paragraphs {
+    text-align: center;
   }
 }

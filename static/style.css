@@ -573,7 +573,7 @@ footer {
 
   footer {
     font-size: 10px;
-    height: 600px;
+    height: 620px;
     text-align: center;
   }
 
@@ -589,6 +589,7 @@ footer {
     text-align: center;
     margin-right: 10%;
     padding-left: 10%;
+    padding-top: 7%;
   }
 
   .follow {
@@ -633,6 +634,7 @@ footer {
 
   .footer-menu {
     padding-left: 11%;
+    padding-top: 7%;
   }
 
   .footer-ul {

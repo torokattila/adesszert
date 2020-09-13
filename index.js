@@ -108,13 +108,6 @@ const cheesecakes = [
     },
     {
         id: 14,
-        name: "Joghurttorta (feketeribizlivel/passió gyümölccsel)",
-        ingredients: ['zabkeksz', 'vaj', 'joghurt', 'tejszín', 'cukor', 'zselatin', 'hideg krémpor', 'vanília', 'gyümölcspüré', 'agar-agar'],
-        allergens: ['Glutént tartalmazó gabona (búza, rozs, árpa, zab, tönköly, kamut-búza vagy ezek hibrid változatai)', 'tejtermékek'],
-        image: ""
-    },
-    {
-        id: 15,
         name: "Málnás-citromkrémes sajttorta (hideg)",
         ingredients: ['zabkeksz', 'vaj', 'mascarpone', 'tejszín', 'cukor', 'zselatin', 'hideg krémpor', 'vanília', 'citrom', 'tojás', 'málna', 'agar-agar', 'pisztácia', 'fehércsoki'],
         allergens: ['Glutént tartalmazó gabona (búza, rozs, árpa, zab, tönköly, kamut-búza vagy ezek hibrid változatai)', 'tejtermékek', 'diófélék'],
@@ -124,56 +117,56 @@ const cheesecakes = [
 
 const seasonalCheesecakes = [
     {
-        id: 16,
+        id: 15,
         name: "Gesztenyés sajttorta",
         ingredients: ['zabkeksz', 'vaj', 'mascarpone', 'tejföl', 'tejszín', 'cukor', 'vanília', 'kukoricakeményítő', 'tojás', 'gesztenye', 'fehércsokoládé', 'étcsokoládé'],
         allergens: ['tojás', 'szójalecitin', 'glutént tartalmazó gabona (búza, rozs, árpa, zab, tönköly, kamut-búza vagy ezek hibrid változatai)', 'tejtermékek', 'diófélék'],
         image: ""
     },
     {
-        id: 17,
+        id: 16,
         name: "Sütőtökös sajttorta",
         ingredients: ['zabkeksz', 'vaj', 'mascarpone', 'tejföl', 'tejszín', 'cukor', 'vanília', 'kukoricakeményítő', 'tojás', 'sütőtök', 'fahéj', 'mandula', 'hideg krémpor'],
         allergens: ['tojás', 'tejtermékek', 'glutént tartalmazó gabona (búza, rozs, árpa, zab, tönköly, kamut-búza vagy ezek hibrid változatai)', 'diófélék'],
         image: ""
     },
     {
-        id: 18,
+        id: 17,
         name: "Ferrero Rocher sajttorta",
         ingredients: ['zabkeksz', 'vaj', 'mascarpone', 'tejföl', 'tejszín', 'cukor', 'vanília', 'kukoricakeményítő', 'tojás', 'Ferrero Rocher csokoládé', 'étcsokoládé'],
         allergens: ['tojás', 'szójalecitin', 'glutént tartalmazó gabona (búza, rozs, árpa, zab, tönköly, kamut-búza vagy ezek hibrid változatai)', 'tejtermékek', 'diófélék'],
         image: ""
     },
     {
-        id: 19,
+        id: 18,
         name: "Bounty sajttorta",
         ingredients: ['zabkeksz', 'vaj', 'mascarpone', 'tejföl', 'tejszín', 'kókuszreszelék', 'tojás', 'kukoricakeményítő', 'vanília', 'cukor', 'étcsokoládé'],
         allergens: ['tojás', 'szójalecitin', 'Glutént tartalmazó gabona (búza, rozs, árpa, zab, tönköly, kamut-búza vagy ezek hibrid változatai)', 'tejtermékek', 'diófélék'],
         image: ""
     },
     {
-        id: 20,
+        id: 19,
         name: "\"Gundel palacsintás\" sajttorta",
         ingredients: ['zabkeksz', 'vaj', 'palacsinta (tojás, liszt, víz, cukor, só)', 'mascarpone', 'tejszín', 'cukor', 'zselatin', 'hideg krémpor', 'vanília', 'citrom', 'tojás', 'mandula'],
         allergens: ['Glutént tartalmazó gabona (búza, rozs, árpa, zab, tönköly, kamut-búza vagy ezek hibrid változatai)', 'tejtermékek', 'diófélék'],
         image: ""
     }, 
     {
-        id: 21,
+        id: 20,
         name: "Toffifee sajttorta",
         ingredients: ['zabkeksz', 'vaj', 'sósmogyoró', 'cukor', 'mascarpone', 'tejszín', 'vanília', 'karamell (tejszín, cukor)', 'étcsokoládé', 'zselatin', 'hideg krémpor', 'toffifee csokoládé'],
         allergens: ['szójalecitin', 'tejtermékek', 'glutént tartalmazó gabona (búza, rozs, árpa, zab, tönköly, kamut-búza vagy ezek hibrid változatai)', 'diófélék', 'mogyorófélék'],
         image: ""
     },
     {
-        id: 22,
+        id: 21,
         name: "Körtés-karamellás sajttorta",
-        ingredients: ['tojás', 'liszt', 'dió', 'cukor', 'méz', 'mascarpone', 'tejszín', 'vanília', 'zselatin', 'karamell', 'só', 'kukoricakeményítő', 'víz'],
+        ingredients: ['tojás', 'liszt', 'dió', 'cukor', 'méz', 'mascarpone', 'tejszín', 'vanília', 'zselatin', 'karamell', 'só', 'kukoricakeményítő', 'víz', 'körte'],
         allergens: ['tojás', 'tejtermékek', 'glutént tartalmazó gabona (búza, rozs, árpa, zab, tönköly, kamut-búza vagy ezek hibrid változatai)', 'diófélék'],
         image: ""
     },
     {
-        id: 23,
+        id: 22,
         name: "Oreo sajttorta",
         ingredients: ['oreo keksz', 'vaj', 'mascarpone', 'tejföl', 'tejszín', 'cukor', 'vanília', 'kukoricakeményítő', 'tojás', 'fehércsokoládé', 'étcsokoládé', ],
         allergens: ['szójalecitin', 'tejtermékek', 'glutént tartalmazó gabona (búza, rozs, árpa, zab, tönköly, kamut-búza vagy ezek hibrid változatai)', 'tojás'],
@@ -183,35 +176,35 @@ const seasonalCheesecakes = [
 
 const pies = [
     {
-        id: 24,
+        id: 23,
         name: "Rákóczi túrós pite",
         ingredients: ['búzaliszt', 'vaj', 'tojás', 'cukor', 'só', 'víz', 'túró', 'vanília', 'baracklekvár', 'citromhéj', 'tejszín', 'tejszínhab', 'habcsók (tojásfehérje, cukor)', 'mandula'],
         allergens: ['Glutént tartalmazó gabona (búza, rozs, árpa, zab, tönköly, kamut-búza vagy ezek hibrid változatai)', 'tejtermékek', 'diófélék', 'tojás'],
         image: ""
     },
     {
-        id: 25,
+        id: 24,
         name: "Meggyes-marcipános pite",
         ingredients: ['búzaliszt', 'vaj', 'tejföl', 'tojás', 'cukor', 'só', 'víz', 'meggy', 'kukoricakeményítő', 'fahéj', 'mandula', 'marcipán'],
         allergens: ['Glutént tartalmazó gabona (búza, rozs, árpa, zab, tönköly, kamut-búza vagy ezek hibrid változatai)', 'tejtermékek', 'diófélék'],
         image: ""
     },
     {
-        id: 26,
+        id: 25,
         name: "Almás pite",
         ingredients: ['búzaliszt', 'vaj', 'tejföl', 'tojás', 'cukor', 'só', 'víz', 'alma', 'kukoricakeményítő', 'fahéj', 'mandula', 'dió', 'citrom'],
         allergens: ['Glutént tartalmazó gabona (búza, rozs, árpa, zab, tönköly, kamut-búza vagy ezek hibrid változatai)', 'tejtermékek', 'diófélék'],
         image: ""
     },
     {
-        id: 27,
+        id: 26,
         name: "Meggyes pite",
         ingredients: ['búzaliszt', 'vaj', 'tejföl', 'tojás', 'cukor', 'só', 'víz', 'meggy', 'kukoricakeményítő', 'fahéj', 'mandula', 'citrom'],
         allergens: ['Glutént tartalmazó gabona (búza, rozs, árpa, zab, tönköly, kamut-búza vagy ezek hibrid változatai)', 'tejtermékek', 'diófélék', 'tojás'],
         image: ""
     },
     {
-        id: 28,
+        id: 27,
         name: "Citromkrémes pite",
         ingredients: ['búzaliszt', 'vaj', 'tejföl', 'tojás', 'cukor', 'só', 'víz', 'citromlé', 'tejszín', 'zselatin', 'pirított mandula'],
         allergens: ['Glutént tartalmazó gabona (búza, rozs, árpa, zab, tönköly, kamut-búza vagy ezek hibrid változatai)', 'tejtermékek', 'szójalecitin', 'diófélék (mandula)'],
@@ -219,152 +212,93 @@ const pies = [
     }
 ]
 
-const specialities = [
+const individual = [
     {
-        id: 29,
+        id: 28,
         name: "Chilis-mangós fehércsokimousse",
-        ingredients: "",
-        allergens: "",
-        price: "",
+        ingredients: ['étcsokoládé (54,5%)', 'vaj', 'tejszín', 'cukor', 'tojás', 'kakaópor', 'só', 'fehércsokoládé', 'vanília', 'agar-agar', 'mangó püré', 'chili'],
+        allergens: ['szójalecitin', 'tejtermékek', 'tojás'],
+        image: ""
+    },
+    {
+        id:29,
+        name: "Sült túrótorta (gluténmentes)",
+        ingredients: ['étcsokoládé (54,5%)', 'vaj', 'tejszín', 'cukor', 'tojás', 'kakaópor', 'só', 'túró', 'vanília', 'kukoricakeményítő', 'erdei gyümölcs mix', 'agar-agar', 'víz'],
+        allergens: ['szójalecitin', 'tejtermékek', 'tojás'],
         image: ""
     },
     {
         id: 30,
-        name: "Narancsos-passiós sajttorta",
-        ingredients: "",
-        allergens: "",
-        price: "",
+        name: "Sacher mousse (gluténmentes)",
+        ingredients: ['étcsokoládé (54,5%)', 'vaj', 'tejszín', 'cukor', 'tojás', 'kakaópor', 'só', 'gluténmentes lisztkeverék', 'baracklekvár', 'agar-agar', 'víz'],
+        allergens: ['szójalecitin', 'tejtermékek', 'tojás'],
         image: ""
     },
     {
         id: 31,
-        name: "Sült túrótorta (gluténmentes)",
-        ingredients: "",
-        allergens: "",
+        name: "Csokoládé szelet",
+        ingredients: ['tojás', 'só', 'cukor', 'liszt', 'holland kakaópor', 'étcsokoládé', 'vaj', 'tejszín', 'cukor', 'mascarpone'],
+        allergens: ['szója (csokiban)', 'tejtermékek', 'tojás', 'búzaliszt'],
         price: "",
         image: ""
     },
     {
         id: 32,
-        name: "Marcipános meggyes pite",
-        ingredients: "",
-        allergens: "",
-        price: "",
+        name: "Joghurttorta (feketeribizlivel/passió gyümölccsel)",
+        ingredients: ['zabkeksz', 'vaj', 'joghurt', 'tejszín', 'cukor', 'zselatin', 'hideg krémpor', 'vanília', 'gyümölcspüré', 'agar-agar'],
+        allergens: ['Glutént tartalmazó gabona (búza, rozs, árpa, zab, tönköly, kamut-búza vagy ezek hibrid változatai)', 'tejtermékek'],
         image: ""
     },
-    {
-        id: 33,
-        name: "Sacher mousse (gluténmentes)",
-        ingredients: "",
-        allergens: "",
-        price: "",
-        image: ""
-    },
-    {
-        id: 34,
-        name: "Triplacsoki mousse (gluténmentes)",
-        ingredients: "",
-        allergens: "",
-        price: "",
-        image: ""
-    },
-    {
-        id: 35,
-        name: "Málnás sacher",
-        ingredients: "",
-        allergens: "",
-        price: "",
-        image: ""
-    },
-    {
-        id: 36,
-        name: "Eszterházy torta",
-        ingredients: "",
-        allergens: "",
-        price: "",
-        image: ""
-    },
-    {
-        id: 37,
-        name: "Kinder MaxiKing torta",
-        ingredients: "",
-        allergens: "",
-        price: "",
-        image: ""
-    }
 ]
 
 const freeCakes = [
     {
-        id: 38, 
-        name: "Mákos guba torta",
-        ingredients: "",
-        allergens: "",
-        price: "",
+        id: 33, 
+        name: "Brownie",
+        ingredients: ['cukor és tejmentes csokoládé (54,5%-os)', '20%-os holland kakaópor', 'tojás', 'eritrit', 'kókusztej', 'kókuszzsír', 'dió', 'mandula'],
+        allergens: ['szója (csokiban)', 'csonthéjasok (dió, mandula)', 'tojás'],
+        image: ""
+    },
+    {
+        id: 34,
+        name: "Túrótorta (kölesből)",
+        ingredients: ['cukor és tejmentes csokoládé (54,5%-os)', '20%-os holland kakaópor', 'tojás', 'eritrit', 'kókusztej', 'kókuszzsír', 'hántolt köles', 'kókusztejszín', 'gluténmentes kukoricakeményítő', 'vanília', 'citrom', 'erdei gyümölcs mix', 'agar-agar'],
+        allergens: ['tojás', 'szója (csokiban)'],
+        image: ""
+    },
+    {
+        id: 35,
+        name: "Sajttorta (kókusztejből)",
+        ingredients: ['cukor és tejmentes csokoládé (54,5%-os)', '20%-os holland kakaópor', 'tojás', 'eritrit', 'kókusztej', 'kókuszzsír', 'kókusztejszín', 'gluténmentes kukoricakeményítő', 'vanília', 'málna'],
+        allergens: ['szója (csokiban)', 'tojás'],
+        image: ""
+    },
+    {
+        id: 36,
+        name: "Csupa csoki torta",
+        ingredients: ['cukor és tejmentes csokoládé (54,5%-os)', '20%-os holland kakaópor', 'tojás', 'eritrit', 'kókusztej', 'kókuszzsír'],
+        allergens: ['szója (csokiban)', 'tojás'],
+        image: ""
+    },
+    {
+        id: 37,
+        name: "Morzsapite (vegán)",
+        ingredients: ['gluténmentes lisztkeverék(rizsliszt, kukoricaliszt, kukoricakeményítő, burgonyapehely, burgonyakeményítő, dextróz, stabilizátor(guargumi), térfogatnövelő szer(E464, xantán gumi), psyllium rost, burgonya rost, lisztkezelő szer(aszkorbinsav), almarost)', 'laktózmentes (vegán) margarin', 'kókuszliszt', 'eritrit', 'kókusztej', 'meggy', 'kukoricakeményítő', 'fahéj', 'citrom'],
+        allergens: ['fahéj'],
+        image: ""
+    },
+    {
+        id: 38,
+        name: "Epres kókuszkrém szelet",
+        ingredients: ['tojás', 'gluténmentes lisztkeverék (rizsliszt, kukoricaliszt, kukoricakeményítő, burgonyapehely, burgonyakeményítő, dextróz, stabilizátor(guar gumi), térfogatnövelő szer(E464, xantán gumi), psyllium rost, burgonya rost, lisztkezelő szer(aszkorbin sav), almarost)', 'kakaópor', 'só', 'eritrit', 'növényi mascarpone krém', 'kókusztej', 'agar-agar', 'zselatin', 'citromhéj', 'eper'],
+        allergens: ['tojás'],
         image: ""
     },
     {
         id: 39,
-        name: "Túrótorta (kölesből)",
-        ingredients: "",
-        allergens: "",
-        price: "",
-        image: ""
-    },
-    {
-        id: 40,
-        name: "Raffaello (kókuszos vaníliás)",
-        ingredients: "",
-        allergens: "",
-        price: "",
-        image: ""
-    },
-    {
-        id: 41,
-        name: "Málnás-étcsokis \"sajttorta\"",
-        ingredients: "",
-        allergens: "",
-        price: "",
-        image: ""
-    },
-    {
-        id: 42,
-        name: "Csokis kókuszos \"sajttorta\"",
-        ingredients: "",
-        allergens: "",
-        price: "",
-        image: ""
-    },
-    {
-        id: 43,
-        name: "Citromkrémes \"sajttorta\"",
-        ingredients: "",
-        allergens: "",
-        price: "",
-        image: ""
-    },
-    {
-        id: 44,
-        name: "Málnás-mangós \"sajttorta\"",
-        ingredients: "",
-        allergens: "",
-        price: "",
-        image: ""
-    },
-    {
-        id: 45,
-        name: "Csupa csoki \"sajttorta\"",
-        ingredients: "",
-        allergens: "",
-        price: "",
-        image: ""
-    },
-    {
-        id: 46,
-        name: "Paleo brownie (magvakkal)",
-        ingredients: "",
-        allergens: "",
-        price: "",
+        name: "Málnás túrótorta (totuból)",
+        ingredients: ['cukor és tejmentes csokoládé (54,5%-os)', '20%-os holland kakaópor', 'tojás', 'eritrit', 'kókusztej', 'kókuszzsír', 'totu krém', 'totu (tojásfehérje)', 'kókusztejszín', 'vanília', 'citrom', 'agar-agar', 'málna'],
+        allergens: ['tojás', 'szója (csokiban)'],
         image: ""
     }
 ]
@@ -378,7 +312,7 @@ app.get('/main', (req, res) => {
 });
 
 app.get('/cakes', (req, res) => {
-    res.render('cakes', {brownies: brownies, cheesecakes: cheesecakes, seasonalCheesecakes: seasonalCheesecakes, pies: pies, specialities: specialities, freeCakes: freeCakes});
+    res.render('cakes', {brownies: brownies, cheesecakes: cheesecakes, seasonalCheesecakes: seasonalCheesecakes, pies: pies, individual: individual, freeCakes: freeCakes});
 });
 
 app.get('/order', (req, res) => {

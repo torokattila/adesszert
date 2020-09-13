@@ -1,0 +1,61 @@
+<div class="individual" id="individual-part">
+    <h1 align="center" class="brownie-header">Egyéni:</h1>
+    <div class="brownie-container">
+        <% for (let i = 0; i < individual.length; i++) { %>
+        <% var counter = 0; %>
+        <div class="brownie-div">
+            <a href="#<%=individual[i].id%>" data-toggle="modal" data-target="#<%=individual[i].id%>"><img
+                    class="cake-image" src="/speciality.jpg" alt="cheesecake"></a>
+            <p class="cake-title"><%=individual[i].name%></p>
+            <button class="details-button" type="button" data-toggle="modal"
+                data-target="#<%=individual[i].name%>">Részletek</button>
+        </div>
+
+        <div id="<%=individual[i].id%>" class="modal fade" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img src="/speciality.jpg" alt="" class="img-fluid">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="<%=individual[i].name%>" tabindex="-1">
+            <div class="modal-dialog" id="<%=individual[i].name%>">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 style="color:#624143"><%=individual[i].name%></h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <div class="modal-body">
+                        <h6 style="text-align: left; color: #624143">Összetevők:</h6>
+                        <div style="margin-bottom: 20px; text-align: left;">
+                            <% let ingredients = individual[i].ingredients; %>
+                            <% for (let i = 0; i < ingredients.length; i++) { %>
+                            <span class="ingredient-span"><%= ingredients[i] %></span>
+                            <% } %>
+                        </div>
+
+                        <h6 style="text-align: left; color: #624143"">Allergének:</h6>
+                        <div style=" text-align: left;">
+                            <% let allergens = individual[i].allergens; %>
+                            <% for (let i = 0; i < allergens.length; i++) { %>
+                            <span class="allergen-span"><%= allergens[i] %></span>
+                            <% } %>
+                    </div>
+
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="modal-close-button" data-dismiss="modal">Bezár</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <% counter++; %>
+    <% } %>
+</div>
+</div>

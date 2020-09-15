@@ -335,8 +335,8 @@ footer {
   margin-top: 40px;
   width: 100%;
   height: 350px;
-  background-image: url('footer.png');
-  font-family: 'Arvo', serif;
+  background-image: url("footer.png");
+  font-family: "Arvo", serif;
 }
 
 .footer-contact-title {
@@ -356,16 +356,18 @@ footer {
   color: silver;
 }
 
-.phone-link, .email-link {
-  color: #E47277;
+.phone-link,
+.email-link {
+  color: #e47277;
   font-size: larger;
   padding-left: 10px;
   letter-spacing: 1px;
 }
 
-.phone-link:hover, .email-link:hover {
+.phone-link:hover,
+.email-link:hover {
   text-decoration: none;
-  color: #E47277;
+  color: #e47277;
 }
 
 .follow {
@@ -388,7 +390,8 @@ footer {
   height: 60px;
 }
 
-.ingredient-span, .allergen-span {
+.ingredient-span,
+.allergen-span {
   display: inline-block;
   padding: 6px;
   background-color: #e79ea1;
@@ -399,7 +402,7 @@ footer {
 }
 
 .navigations {
-  font-family: 'Patrick Hand', cursive;
+  font-family: "Patrick Hand", cursive;
   font-size: 20px;
   text-transform: uppercase;
   font-weight: bold;
@@ -428,7 +431,7 @@ footer {
 }
 
 .navigation-list-item a:hover {
-  color: #e47277!important;
+  color: #e47277 !important;
   text-decoration: none;
   transition: all 0.2s ease;
 }
@@ -452,7 +455,7 @@ footer {
 .footer-menu-title {
   text-transform: uppercase;
   color: whitesmoke;
-  margin-left: 30%;
+  margin-left: 32%;
 }
 
 .footer-ul {
@@ -472,7 +475,7 @@ footer {
 }
 
 .footer-li a:hover {
-  color: #E47277;
+  color: #e47277;
   text-decoration: none;
   transition: all 0.3s ease;
   padding-left: 10px;
@@ -491,7 +494,7 @@ footer {
 }
 
 .contact-top-name-div {
-  font-family: 'Patrick Hand', cursive;
+  font-family: "Patrick Hand", cursive;
   padding-top: 6%;
   padding-left: 10%;
 }
@@ -511,12 +514,12 @@ footer {
 
 .contact-phone-link {
   font-weight: lighter;
-  color: #E47277;
+  color: #e47277;
   padding-left: 1%;
 }
 
 .contact-phone-link:hover {
-  color: #E47277;
+  color: #e47277;
   text-decoration: none;
 }
 
@@ -700,7 +703,8 @@ footer {
     padding-left: 0%;
   }
 
-  .footer-phone-number, .footer-email {
+  .footer-phone-number,
+  .footer-email {
     padding-left: 0%;
   }
 
@@ -714,18 +718,18 @@ footer {
   .follow {
     text-transform: uppercase;
   }
-  
+
   .icons {
     padding-top: 1%;
     margin-left: -10%;
   }
-  
+
   .facebook {
     width: 75px;
     height: 75px;
     margin-right: 3%;
   }
-  
+
   .instagram {
     width: 60px;
     height: 60px;
@@ -756,9 +760,16 @@ footer {
     padding-top: 7%;
   }
 
+  .footer-menu-title {
+    text-transform: uppercase;
+    color: whitesmoke;
+    margin-left: 28%;
+  }
+
   .footer-ul {
+    text-align: center;
     position: relative;
-    padding-left: 37%;
+    padding-right: 32%;
     padding-top: 10px;
     list-style-type: none;
   }
@@ -775,40 +786,40 @@ footer {
     padding-top: 10%;
     padding-left: 10%;
   }
-  
+
   .contact-name {
     font-size: 20px;
   }
-  
+
   .contact-phone {
     font-size: 17px;
     font-weight: bold;
     padding-top: 2%;
   }
-  
+
   .contact-phone-link {
     padding-left: 1%;
   }
-  
+
   .contact-phone-link:hover {
     text-decoration: none;
   }
-  
+
   .contact-email {
     font-size: 17px;
     padding-top: 1%;
   }
-  
+
   .contact-email-span {
     padding-left: 1%;
   }
-  
+
   .textarea-header {
     padding-top: 4%;
     font-size: 17px;
     padding-bottom: 2%;
   }
-  
+
   #contact-textarea {
     width: 17em;
     height: 13em;
@@ -816,12 +827,12 @@ footer {
     resize: none;
     font-size: 15px;
   }
-  
+
   #contact-textarea:focus {
     border: 1px solid grey;
     transition: all 0.2s ease;
   }
-  
+
   .contact-send-button {
     padding: 10px;
     width: 25%;
@@ -838,7 +849,7 @@ footer {
     width: 60px;
     height: 60px;
   }
-  
+
   .contact-instagram-icon {
     width: 50px;
     height: 50px;

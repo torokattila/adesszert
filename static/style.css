@@ -490,6 +490,125 @@ footer {
   padding-left: 12px;
 }
 
+.contact-top-name-div {
+  font-family: 'Patrick Hand', cursive;
+  padding-top: 6%;
+  padding-left: 10%;
+}
+
+.contact-name {
+  font-size: 30px;
+  font-weight: bold;
+  color: #5e3c3e;
+}
+
+.contact-phone {
+  color: #624143;
+  font-size: 25px;
+  font-weight: bold;
+  padding-top: 2%;
+}
+
+.contact-phone-link {
+  font-weight: lighter;
+  color: #E47277;
+  padding-left: 1%;
+}
+
+.contact-phone-link:hover {
+  color: #E47277;
+  text-decoration: none;
+}
+
+.contact-email {
+  color: #624143;
+  font-size: 25px;
+  font-weight: bold;
+  padding-top: 1%;
+}
+
+.contact-email-span {
+  color: #e47277;
+  font-weight: lighter;
+  padding-left: 1%;
+}
+
+.contact-social {
+  color: #624143;
+  font-size: 25px;
+  font-weight: bold;
+  padding-top: 1%;
+}
+
+.textarea-header {
+  padding-top: 4%;
+  color: #624143;
+  font-size: 25px;
+  padding-bottom: 2%;
+}
+
+#contact-textarea {
+  width: 25em;
+  height: 15em;
+  border-radius: 8px;
+  border: 1px solid silver;
+  resize: none;
+  font-size: 19px;
+  color: #e96067;
+  padding-left: 10px;
+  box-shadow: 2px 5px 15px -8px rgba(0, 0, 0, 0.59);
+  transition: all 0.2s ease;
+}
+
+#contact-textarea:focus {
+  outline: none;
+  border: 2px solid grey;
+  transition: all 0.2s ease;
+}
+
+.contact-send-button-div {
+  padding-top: 3%;
+}
+
+.contact-send-button {
+  font-family: "Cairo", sans-serif;
+  font-weight: bold;
+  padding: 10px;
+  width: 10%;
+  text-align: center;
+  border: 1px solid silver;
+  background-color: #fff;
+  border-radius: 5px;
+  color: #e67e83;
+  position: relative;
+  transition: all 0.2s ease;
+  box-shadow: 2px 5px 15px -8px rgba(0, 0, 0, 0.59);
+  cursor: pointer;
+}
+
+.contact-send-button:focus {
+  outline: 0;
+}
+
+.contact-send-button:hover {
+  transition: all 0.2s ease;
+  color: white;
+  border: 1px solid #e67e83;
+  background-color: #e67e83;
+  cursor: pointer;
+}
+
+.contact-facebook-icon {
+  width: 70px;
+  height: 70px;
+  margin-left: 10px;
+}
+
+.contact-instagram-icon {
+  width: 60px;
+  height: 60px;
+}
+
 @media only screen and (max-width: 600px) {
   .top-header {
     display: flex;
@@ -650,5 +769,78 @@ footer {
 
   .paragraphs {
     text-align: center;
+  }
+
+  .contact-top-name-div {
+    padding-top: 10%;
+    padding-left: 10%;
+  }
+  
+  .contact-name {
+    font-size: 20px;
+  }
+  
+  .contact-phone {
+    font-size: 17px;
+    font-weight: bold;
+    padding-top: 2%;
+  }
+  
+  .contact-phone-link {
+    padding-left: 1%;
+  }
+  
+  .contact-phone-link:hover {
+    text-decoration: none;
+  }
+  
+  .contact-email {
+    font-size: 17px;
+    padding-top: 1%;
+  }
+  
+  .contact-email-span {
+    padding-left: 1%;
+  }
+  
+  .textarea-header {
+    padding-top: 4%;
+    font-size: 17px;
+    padding-bottom: 2%;
+  }
+  
+  #contact-textarea {
+    width: 17em;
+    height: 13em;
+    border: 1px solid silver;
+    resize: none;
+    font-size: 15px;
+  }
+  
+  #contact-textarea:focus {
+    border: 1px solid grey;
+    transition: all 0.2s ease;
+  }
+  
+  .contact-send-button {
+    padding: 10px;
+    width: 25%;
+    text-align: center;
+    position: relative;
+  }
+
+  .contact-social {
+    font-size: 17px;
+    padding-top: 1%;
+  }
+
+  .contact-facebook-icon {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .contact-instagram-icon {
+    width: 50px;
+    height: 50px;
   }
 }

@@ -90,4 +90,16 @@ $(document).ready(function() {
     } else {
         $('#contact-page').css('color', '#5e3c3e');
     }
+
+    $('.contact-send-button').on('click', function(event) {
+        event.preventDefault();
+        let emailText = $('#contact-textarea').val();
+        if ($('#contact-textarea').val() == '') {
+            alert("Üresen akartad elküldeni a mezőt!");
+            return;
+        } else {
+            window.location = 'mailto:torcsiattila93@gmail.com?subject=&body=' + emailText;
+            location.reload();
+        }
+    });
 })

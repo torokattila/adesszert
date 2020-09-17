@@ -544,7 +544,7 @@ footer {
 }
 
 .textarea-header {
-  padding-top: 4%;
+  padding-top: 3%;
   color: #624143;
   font-size: 25px;
   padding-bottom: 2%;
@@ -610,6 +610,25 @@ footer {
 .contact-instagram-icon {
   width: 60px;
   height: 60px;
+}
+
+.contact-input-name, .contact-input-email {
+  border-radius: 8px;
+  border: 1px solid silver;
+  padding-left: 10px;
+  margin-bottom: 20px;
+  height: 40px;
+  width: 250px;
+  font-size: 20px;
+  color: #e96067;
+  box-shadow: 2px 5px 15px -8px rgba(0, 0, 0, 0.59);
+  transition: all 0.2s ease;
+}
+
+.contact-input-name:focus, .contact-input-email:focus {
+  outline: none;
+  border: 2px solid grey;
+  transition: all 0.2s ease;
 }
 
 @media only screen and (max-width: 600px) {
@@ -815,7 +834,7 @@ footer {
   }
 
   .textarea-header {
-    padding-top: 4%;
+    padding-top: 2%;
     font-size: 17px;
     padding-bottom: 2%;
   }
@@ -865,5 +884,18 @@ footer {
 
   #contact-li {
     padding-left: 7%;
+  }
+
+  .contact-input-name, .contact-input-email {
+    height: 30px;
+    width: 200px;
+    font-size: 14px;
+    transition: all 0.2s ease;
+  }
+  
+  .contact-input-name:focus, .contact-input-email:focus {
+    outline: none;
+    border: 1px solid grey;
+    transition: all 0.2s ease;
   }
 }

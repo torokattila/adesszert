@@ -3,15 +3,20 @@
     <h4 class="contact-name">Bertalan Ivett</h4>
     <p class="contact-phone">Telefonszám: <a class="contact-phone-link" href="tel:+36306091024">+36306091024</a></p>
     <p class="contact-email">Email: <span class="contact-email-span">adesszert@gmail.com</span></p>
-    <p class="contact-social">Keresd a Desszertet: <a href="https://www.facebook.com/adesszert" target="_blank"><img src="/facebook.png"
-                class="contact-facebook-icon" alt="facebook_icon"></a>
-    <a href="https://www.instagram.com/adesszert/" target="_blank"><img class="contact-instagram-icon" src="/instagram.png" alt="instagram_icon"></a>
+    <p class="contact-social">Keresd a Desszertet: <a href="https://www.facebook.com/adesszert" target="_blank"><img
+                src="/facebook.png" class="contact-facebook-icon" alt="facebook_icon"></a>
+        <a href="https://www.instagram.com/adesszert/" target="_blank"><img class="contact-instagram-icon"
+                src="/instagram.png" alt="instagram_icon"></a>
     </p>
     <h5 class="textarea-header">Kérdés esetén írj bátran:</h5>
-    <textarea name="contact-textarea" id="contact-textarea"></textarea>
-    <div class="contact-send-button-div">
-        <button type="click" class="contact-send-button">Küldés</button>
-    </div>
+    <form action="/contact" method="post" id="question_submit">
+        <input type="text" name="contact_input_name" placeholder="Név:" class="contact-input-name"><br>
+        <input type="text" name="contact_input_email" placeholder="Email:" class="contact-input-email"><br>
+        <textarea name="contact_textarea" id="contact-textarea" placeholder="Üzenet:"></textarea>
+        <div class="contact-send-button-div">
+            <button type="submit" class="contact-send-button">Küldés</button>
+        </div>
+    </form>
 </div>
 <%- include('footer.ejs') %>
 </div>

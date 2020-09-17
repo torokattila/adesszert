@@ -1,7 +1,7 @@
-$(document).ready(function() {
+$(document).ready(function () {
     $('.scroll-up-button').hide();
 
-    $(window).scroll(function() {
+    $(window).scroll(function () {
         if ($(this).scrollTop() > 200) {
             $('.scroll-up-button').fadeIn();
         } else {
@@ -9,23 +9,23 @@ $(document).ready(function() {
         }
     })
 
-    $('.scroll-up-button').click(function(){
-        $('html, body').animate({scrollTop : 0}, -10);
+    $('.scroll-up-button').click(function () {
+        $('html, body').animate({ scrollTop: 0 }, -10);
         return false;
     });
 
-    $('.details-button').click(function() {
+    $('.details-button').click(function () {
         $('.navbar').hide();
 
-        $('.modal-close-button').click(function() {
+        $('.modal-close-button').click(function () {
             $('.navbar').fadeIn();
         });
 
-        $('.close').click(function() {
+        $('.close').click(function () {
             $('.navbar').fadeIn();
         });
 
-        $(document).mouseup(function(e) {
+        $(document).mouseup(function (e) {
             let container = $('.modal-dialog');
             if (!container.is(e.target) && container.has(e.target).length === 0) {
                 $('.navbar').fadeIn();
@@ -33,14 +33,14 @@ $(document).ready(function() {
         });
     });
 
-    $('.cake-image').click(function() {
+    $('.cake-image').click(function () {
         $('.navbar').hide();
 
-        $('.close').click(function() {
+        $('.close').click(function () {
             $('.navbar').fadeIn();
         });
 
-        $(document).mouseup(function(e) {
+        $(document).mouseup(function (e) {
             let container = $('.modal-dialog');
             if (!container.is(e.target) && container.has(e.target).length === 0) {
                 $('.navbar').fadeIn();
@@ -48,18 +48,18 @@ $(document).ready(function() {
         });
     });
 
-    $('.search-icon').click(function() {
+    $('.search-icon').click(function () {
         $('.navbar').hide();
 
-        $('.modal-close-button').click(function() {
+        $('.modal-close-button').click(function () {
             $('.navbar').fadeIn();
         });
 
-        $('.close').click(function() {
+        $('.close').click(function () {
             $('.navbar').fadeIn();
         });
 
-        $(document).mouseup(function(e) {
+        $(document).mouseup(function (e) {
             let container = $('.modal-dialog');
             if (!container.is(e.target) && container.has(e.target).length === 0) {
                 $('.navbar').fadeIn();
@@ -99,15 +99,25 @@ $(document).ready(function() {
         $('.footer-contact').css('color', 'whitesmoke');
     }
 
-    $('.contact-send-button').on('click', function(event) {
+    $('#question_submit').submit(function (event) {
         event.preventDefault();
-        let emailText = $('#contact-textarea').val();
         if ($('#contact-textarea').val() == '') {
-            alert("Üresen akartad elküldeni a mezőt!");
+            Swal.fire({
+                icon: 'error',
+                title: 'Hoppá...',
+                text: 'Üresen akartad elküldeni a mezőt!',
+                confirmButtonColor: '#e67e83',
+            })
             return;
         } else {
-            window.location = 'mailto:torcsiattila93@gmail.com?subject=&body=' + emailText;
-            location.reload();
+            this.submit();
+            Swal.fire({
+                icon: 'success',
+                text: 'Az üzenet sikeresen elküldve!',
+                confirmButtonColor: '#e67e83',
+            })
         }
     });
+
+
 })

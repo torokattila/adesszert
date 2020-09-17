@@ -1,7 +1,17 @@
+require('dotenv').config();
 const express = require('express');
 const bodyParser = require('body-parser');
+const nodemailer = require('nodemailer');
 const PORT = (process.env.PORT || 3000);
 const app = express();
+
+const transporter = nodemailer.createTransport({
+    service: 'gmail',
+    auth: {
+        user: process.env.GMAIL_USER,
+        pass: process.env.GMAIL_PASSWORD
+    }
+});
 
 app.use(express.static(__dirname + '/static'));
 app.use(express.static('controller'));
@@ -321,6 +331,26 @@ app.get('/order', (req, res) => {
 
 app.get('/contact', (req, res) => {
     res.render('contact');
+})
+
+app.post('/contact', (req, res) => {
+    const mailOptions = {
+        from: req.body.contact_email_input,
+        to: 'torcsiattila94@gmail.com',
+        subject: 'Érdeklődés',
+        text: 'Név: ' + req.body.contact_input_name + '\n' 
+        + 'Email címe: ' + req.body.contact_input_email + '\n' 
+        + 'Üzenet: ' + '\n' + req.body.contact_textarea
+    }
+
+    transporter.sendMail(mailOptions, (error, info) => {
+        if (error) {
+            console.log(error);
+        } else {
+            console.log('Email sent: ' + info.response);
+            res.redirect('/contact');
+        }
+    });
 })
 
 app.listen(PORT, () => {

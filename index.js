@@ -335,7 +335,7 @@ app.get('/contact', (req, res) => {
 
 app.post('/contact', (req, res) => {
     const mailOptions = {
-        from: req.body.contact_email_input,
+        from: 'torcsiattila93@gmail.com',
         to: 'torcsiattila94@gmail.com',
         subject: 'Érdeklődés',
         text: 'Név: ' + req.body.contact_input_name + '\n' 
